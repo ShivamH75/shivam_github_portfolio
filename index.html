@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shivam Hundekari Portfolio</title>
     <link rel="stylesheet" href="styles/main.css">
+    <script src="script/script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
@@ -16,41 +17,86 @@
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact">Connect</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="about">
+        <h2>_</h2>
         <h2>About Me</h2>
-        <p>I am a passionate business analyst with a deep love for analytics and data-driven insights. My journey in the field of business analysis has equipped me with valuable skills in interpreting complex data sets, identifying trends, and making informed decisions that drive business growth. I thrive on transforming raw data into actionable strategies that optimize processes and enhance organizational performance. With a keen eye for detail and a commitment to continuous learning, I am dedicated to harnessing the power of data to uncover opportunities and solve business challenges effectively.</p>
-        <img src="images/sample_01.jpeg" alt="General Image">
+        <h2 style="font-family: Calibri;">SHIVAM HUNDEKARI</h2>
+        <p>I am a passionate business analyst with a deep love for analytics and data-driven insights. My journey in the
+            field of business analysis has equipped me with valuable skills in interpreting complex data sets,
+            identifying trends, and making informed decisions that drive business growth. I thrive on transforming raw
+            data into actionable strategies that optimize processes and enhance organizational performance. With a keen
+            eye for detail and a commitment to continuous learning, I am dedicated to harnessing the power of data to
+            uncover opportunities and solve business challenges effectively.</p>
+        <img src="images/sample_01.jpeg" alt="General Image" class="img-width-half">
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
+        <!-- Project 1 -->
         <div class="project">
-            <h3>Project 1: Excel Data Analysis</h3>
-            <p>Project involves the comprehensive analysis of car buyer data, utilizing the powerful data manipulation and visualization capabilities of Microsoft Excel. The primary objectives are to clean the raw data, analyze key metrics, and create an interactive dashboard that provides valuable insights into car buyer trends and patterns.</p>
+            <h3>
+                Project 1: Excel Data Analysis
+                <a href="#" class="tooltip icon-external-link" title="More details" onclick="openProjectLink(0)">
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
+            </h3>
+            <p>Project involves the comprehensive analysis of car buyer data, utilizing the powerful data manipulation
+                and visualization capabilities of Microsoft Excel. The primary objectives are to clean the raw data,
+                analyze key metrics, and create an interactive dashboard that provides valuable insights into car buyer
+                trends and patterns.</p>
 
-            <img src="images/Excel_project_Dashboard_01.png" alt=""
-                class="img-max-width">
-
+            <img src="images/Excel_project_Dashboard_01.png" alt="Excel Project 1 Image" class="img-max-width">
         </div>
+
+        <!-- Project 2 -->
         <div class="project">
-            <h3>Project 2: SQL Quick Notes</h3>
-            <p>Comprehensive set of SQL quick notes prepared and executed within Jupyter Notebooks
-                using Python. By leveraging the versatility of Jupyter Notebooks and the power of SQL, this project aims
-                to provide an interactive and efficient learning resource for SQL queries and database management.</p>
+            <h3>
+                Project 2: SQL Quick Notes
+                <a href="#" class="tooltip icon-external-link" title="More details" onclick="openProjectLink(1)">
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
+            </h3>
+            <p>Comprehensive set of SQL quick notes prepared and executed within Jupyter Notebooks using Python. By
+                leveraging the versatility of Jupyter Notebooks and the power of SQL, this project aims to provide an
+                interactive and efficient learning resource for SQL queries and database management.</p>
+
+            <!-- <img src="images/Excel_project_Dashboard_01.png" alt="Excel Project 1 Image" class="img-max-width"> -->
         </div>
+
 
     </section>
 
 
     <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Feel free to contact me via email or social media.</p>
-        <p>Email: <a href="mailto:your.email@example.com">shivam.hundekari@gmail.com</a></p>
+
+        <h2>Connect</h2>
+        <p text-align: center;>Feel free to contact me via email or social media</p>
+
+        <div id="contact-links" style="display: flex;">
+            <div style="margin-right: 10px;">
+                <a id="email-link" style="text-decoration: none; color: inherit;">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+            </div>
+            <div style="margin-right: 10px;">
+                <a id="linkedin-link" target="_blank" style="text-decoration: none; color: inherit;">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+            <div>
+                <a id="github-link" target="_blank" style="text-decoration: none; color: inherit;">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+
+
+        <p>_</p>
     </section>
 
     <footer>
