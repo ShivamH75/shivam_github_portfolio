@@ -240,11 +240,18 @@ footer {
 
 
 /* ## Class for styling the images  */
-.imagestyle {
-    width: auto;
+.img-max-width {
     max-width: 1000px;
-    border: 1px #ccc;
-    border-radius: 4px;
-    align-items: center;
-    text-align: center;
+    width: 100%;
+    height: auto;
+    border: 1px solid #333333; /* Adjust the thickness, style, and color as needed */
+    border-radius: 4px; /* Optional: Add rounded corners */
+}
+
+.img-width-half {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+     border: 1px solid #333333; /* Adjust the thickness, style, and color as needed */
+    border-radius: 4px; /* Optional: Add rounded corners */
 }
