@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles/styles_home_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <h1>SHIVAM HUNDEKARI</h1>
+            <p>Welcome to My Portfolio!</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about" class="nav-link">About Me</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Connect</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="about-section">
+        <h1>About Me</h1>
+        <p>I am a dedicated business analyst with a strong passion for problem-solving. I am involved in project
+            management of the development of web applications, where I collaborate with cross-functional teams to
+            deliver solutions that meet business needs and enhance user experience. My love for analytics and my
+            commitment to leveraging data for impactful results drive my continuous pursuit of excellence in every
+            project I undertake.</p>
+            <img src="images/sample_01.jpeg" alt="" class="imagestyle">
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h1>Projects</h1>
+        <div class="project-card">
+            <h2>Excel Data Analysis: Car Sales Dashboard</h2>
+            <p>Project involves the comprehensive analysis of car buyer data, utilizing the powerful data manipulation
+                and visualization capabilities of Microsoft Excel. The primary objectives are to clean the raw data,
+                analyze key metrics, and create an interactive dashboard that provides valuable insights into car buyer
+                trends and patterns.</p>
+            <div class="chips">
+                <span class="chip"><i class="fas fa-file-excel"></i> Excel</span>
+                <!-- <span class="chip"><i class="fas fa-database"></i> SQL</span>
+                <span class="chip"><i class="fas fa-chart-bar"></i> Power BI</span>
+                <span class="chip"><i class="fab fa-python"></i> Python</span>
+                <span class="chip"><i class="fab fa-js"></i> JavaScript</span>
+                <span class="chip"><i class="fab fa-html5"></i> HTML</span>
+                <span class="chip"><i class="fab fa-css3-alt"></i> CSS</span> -->
+            </div>
+            <a href="project_pages/project1.html" class="btn">Details</a>
+        </div>
+
+        <div class="project-card">
+            <h2>SQL Data Analysis: Air Quality Index</h2>
+            <p>Comprehensive set of SQL quick notes prepared and executed within Jupyter Notebooks using Python. By
+                leveraging the versatility of Jupyter Notebooks and the power of SQL, this project aims to provide an
+                interactive and efficient learning resource for SQL queries and database management.</p>
+            <div class="chips">
+                <span class="chip"><i class="fas fa-database"></i> SQL</span>
+            </div>
+            <a href="project_pages/project2.html" class="btn">Details</a>
+        </div>
+        <!-- Add more project cards as needed -->
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h1>Connect</h1>
+        <p>Feel free to connect</p>
+        <div class="contact-buttons">
+            <!-- <a href="mailto:your-email@example.com" class="contact-chip"><i class="fas fa-envelope"></i> Email</a> -->
+            <a id="email-link" href="#" class="contact-chip"><i class="fas fa-envelope"></i> Email</a>
+            <a id="linkedin-link" href="#" class="contact-chip" target="_blank"><i class="fab fa-linkedin"></i>
+                LinkedIn</a>
+            <a id="github-link" href="#" class="contact-chip" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Shivam Hundekari</p>
+    </footer>
+
+    <script src="../script/script.js"></script>
+</body>
+
+</html>
