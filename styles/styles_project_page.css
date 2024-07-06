@@ -112,6 +112,7 @@ section p {
 
 /* ## Class for styling the images  */
 .imagestyle {
+    width: auto;
     max-width: 1000px;
     border: 1px #ccc;
     border-radius: 4px;

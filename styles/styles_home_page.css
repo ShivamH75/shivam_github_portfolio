@@ -18,7 +18,8 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
-    line-height: 0.40; /* Adjust line height for header*/
+    line-height: 0.40;
+    /* Adjust line height for header*/
 }
 
 .header-left {
@@ -59,27 +60,28 @@ nav ul li a:hover::after {
 
 
 section {
-    padding: 125px 20px 80px 20px; /* Adjust top padding to account for header height */
+    padding: 125px 20px 80px 20px;
+    /* Adjust top padding to account for header height */
     text-align: center;
 }
 
-.about-section{
+.about-section {
     /* line-height: 1.6; */
-        padding: 100px 20px 20px 20px;   
-        text-align: center;
-}
-
-.projects-section{
     padding: 100px 20px 20px 20px;
     text-align: center;
 }
 
-.contact-section{
+.projects-section {
+    padding: 100px 20px 20px 20px;
+    text-align: center;
+}
+
+.contact-section {
     padding: 20px 20px 80px 20px;
     text-align: center;
 }
 
-.section-projects{
+.section-projects {
     margin-bottom: 20px;
 }
 
@@ -87,10 +89,12 @@ section {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 10px 20px 20px 20px;
-    margin: 20px auto; /* Center-align the project card */
+    margin: 20px auto;
+    /* Center-align the project card */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s;
-    width: 90%; /* Reduce width to 90% */
+    width: 90%;
+    /* Reduce width to 90% */
     /* max-width: 1000px; Optional: Limit the maximum width */
 }
 
@@ -117,6 +121,7 @@ section {
     font-size: 0.9em;
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
+
 /* Project Chips End */
 
 .btn {
@@ -124,16 +129,17 @@ section {
     padding: 10px 20px;
     margin-top: 10px;
     /* background-color: #007BFF; */
-    background-color: white; 
+    background-color: white;
     /* color: white; */
-    color: black; 
-    border: 2px solid #04AA6D;  
+    color: black;
+    border: 2px solid #04AA6D;
 
     text-decoration: none;
     border-radius: 4px;
     transition: background-color 0.3s;
     white-space: nowrap;
-    font-size: 0.9em; /* Reduced font size for button text */
+    font-size: 0.9em;
+    /* Reduced font size for button text */
 }
 
 .btn:hover {
@@ -150,7 +156,8 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
-    line-height: 0.40; /* Adjust line height for footer*/
+    line-height: 0.40;
+    /* Adjust line height for footer*/
 }
 
 .contact-buttons {
@@ -220,6 +227,7 @@ footer {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -233,10 +241,10 @@ footer {
 
 /* ## Class for styling the images  */
 .imagestyle {
+    width: auto;
     max-width: 1000px;
     border: 1px #ccc;
     border-radius: 4px;
-    height: auto;
     align-items: center;
     text-align: center;
 }
