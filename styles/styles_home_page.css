@@ -241,8 +241,8 @@ footer {
 
 /* ## Class for styling the images  */
 .img-max-width {
-    max-width: 1000px;
-    width: 100%;
+    max-width: 1080px;
+    width: 75%;
     height: auto;
     border: 1px solid #333333; /* Adjust the thickness, style, and color as needed */
     border-radius: 4px; /* Optional: Add rounded corners */

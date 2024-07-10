@@ -24,10 +24,100 @@
 
     <!-- // Add Project Details Here  -->
     <section class="projectDetails">
-        <h2>Detailed Project Information</h2>
-        <p>SQL project executed within Jupyter Notebooks using Python. By leveraging the versatility of Jupyter Notebooks and the power of SQL, this project aims to provide an interactive platform for SQL queries and database management.</p>
+        <h2>Project Summary</h2>
+        <p>SQL project executed within <b>Jupyter Notebooks</b> using Python. By leveraging the versatility of Jupyter Notebooks and the power of SQL, this project aims to provide an interactive platform for SQL queries and database management.</p>
+        <h2>Introduction</h2>
+        <p>The  <a href="https://en.wikipedia.org/wiki/Air_quality_index">Air Quality Index</a> (AQI) is a crucial metric used to communicate the quality of the air and its potential health impacts. This project aims to analyze air quality data across various cities, states, and pollutants to derive meaningful insights and trends. The dataset includes information on pollutant levels such as PM10 and PM2.5, recorded at different monitoring stations across multiple locations.</p>
+        <h2>Dataset</h2>
+        <p>The data for this project is sourced from data.gov.in, an open data platform that provides access to various datasets from the Indian government. This project aims to utilize real-time data to derive meaningful insights and trends <a href="https://data.gov.in/catalog/real-time-air-quality-index">(Ref. dataset)</a>. The csv data is imported into MySQL and obtained a database file to begin the analysis.</p>
 
-        <!-- <img src="../images/Excel_project_Dashboard_01.png" alt="" class="imagestyle"> -->
+        <table>
+            <tr>
+                <th>Sr. No.</th>
+              <th>Entity</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>1. </td>
+              <td>country</td>
+              <td>The country where the data is recorded.</td>
+            </tr>
+            <tr>
+              <td>2. </td>
+              <td>state</td>
+              <td>The state within the country.</td>
+            </tr>
+            <tr>
+              <td>3. </td>
+              <td>city</td>
+              <td>The specific city where the monitoring station is located.</td>
+            </tr>
+            <tr>
+              <td>4. </td>
+              <td>station</td>
+              <td>The name of the monitoring station.</td>
+            </tr>
+            <tr>
+              <td>5. </td>
+              <td>last_update</td>
+              <td>The timestamp of the last recorded data.</td>
+            </tr>
+            <tr>
+              <td>6. </td>
+              <td>latitude</td>
+              <td>The latitude of the monitoring station.</td>
+            </tr>
+            <tr>
+                <td>7. </td>
+                <td>longitude</td>
+                <td>The longitude of the monitoring station.</td>
+              </tr>
+              <tr>
+                <td>8. </td>
+                <td>pollutant_id</td>
+                <td>The type of pollutant (e.g., PM10, PM2.5).</td>
+              </tr>
+              <tr>
+                <td>9. </td>
+                <td>pollutant_min</td>
+                <td>The minimum recorded level of the pollutant.</td>
+              </tr>
+              <tr>
+                <td>10. </td>
+                <td>pollutant_max</td>
+                <td>The maximum recorded level of the pollutant.</td>
+              </tr>
+              <tr>
+                <td>11. </td>
+                <td>pollutant_avg</td>
+                <td>The average recorded level of the pollutant.</td>
+              </tr>
+          </table>
+    <br>
+        <h2>SQL Analysis Questions </h2>
+            <ol>
+            1. What is the average pollutant level (pollutant_avg) for each pollutant type across all cities? <br>
+            2. Which city has the highest average pollutant level for PM10? <br>
+            3. How does the average pollutant level of PM2.5 compare between different states? <br>
+            4. What is the trend of pollutant levels over time for a specific city? <br>
+            5. Which stations have recorded the highest maximum pollutant levels (pollutant_max) for each pollutant? <br>
+            6. What is the average pollutant level for each city for a specific pollutant (e.g., PM2.5) over the past month? <br>
+            7. Are there any significant differences in pollutant levels between urban and rural stations? <br> 
+            8. Which pollutants have shown the most variation in their levels (difference between pollutant_max and pollutant_min) across different stations? <br>
+            9. How do pollutant levels vary by geographical coordinates (latitude and longitude)? <br>
+            10. Which city has the highest average pollutant level for PM10 and PM2.5 combined?</p> </ol>
+            <h2>Insights and Conclusions</h2>
+            <p>
+                The analysis will provide valuable insights into the air quality situation across different regions. Key findings will highlight areas with the highest pollution levels, identify trends over time, and uncover significant differences between pollutant types and their impacts. These insights can inform public health recommendations, policy decisions, and environmental initiatives aimed at improving air quality.
+            </p>
+<br>
+            <h2>Snapshots</h2>
+        <img src="../images/air_quality_analysis_01.png" alt="" class="img-max-width"> <br> <br>
+        <img src="../images/air_quality_analysis_02.png" alt="" class="img-max-width">
+
+
+       
+
 
     </section>
 
