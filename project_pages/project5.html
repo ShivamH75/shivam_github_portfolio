@@ -1,122 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 5 Details</title>
+    <link rel="stylesheet" href="../styles/styles_home_page.css" />
+    <!-- Include your main styles.css -->
+    <link rel="stylesheet" href="../styles/styles_project_page.css" />
+    <!-- Include project-specific CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project 5 Details</title>
-  <link rel="stylesheet" href="../styles/styles_home_page.css"> <!-- Include your main styles.css -->
-  <link rel="stylesheet" href="../styles/styles_project_page.css"> <!-- Include project-specific CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-</head>
+  <body>
+    <header class="project-header">
+      <nav>
+        <ul>
+          <li>
+            <a href="../index.html" class="btn"
+              ><i class="fas fa-home"></i>Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/ShivamH75/Data_Analysis_Projects/blob/master/S3-MongoDB/mongodb_data_analysis.ipynb"
+              class="btn"
+              target="_blank"
+              ><i class="fab fa-github"></i>GitHub Repo</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <h1>MongoDB: Global Renewable Energy Analysis</h1>
+    </header>
 
-<body>
-  <header class="project-header">
-    <nav>
-      <ul>
-        <li><a href="../index.html" class="btn"><i class="fas fa-home"></i>Home</a></li>
-        <li><a href="https://github.com/ShivamH75/Data_Analysis_Projects/blob/master/S3-MongoDB/mongodb_data_analysis.ipynb" class="btn"
-            target="_blank"><i class="fab fa-github"></i>GitHub Repo</a></li>
-      </ul>
-    </nav>
-    <h1>MongoDB: Global Renewable Energy Analysis</h1>
-  </header>
+    <!-- // Add Project Details Here  -->
+    <section class="projectDetails">
+      <h2>Project Background</h2>
+      <p>
+        The growing focus on renewable energy sources has prompted the need for
+        extensive data analysis to understand trends, investments, and impacts.
+        This project aims to analyze renewable energy data to uncover insights
+        and support decision-making.
+      </p>
 
-  <!-- // Add Project Details Here  -->
-  <section class="projectDetails">
-    <h2>Overview</h2>
-    <!-- <p>The objective of this project is to analyze defect data to identify trends, understand defect distribution, and assess the effectiveness of inspection methods. By visualizing this data, we aim to provide actionable insights that can help improve product quality and reduce defect-related costs.</p> -->
+      <h3>Objectives:</h3>
+      <p>
+       <li> To import renewable energy data into MongoDB. </li>
+       <li> To analyze the data using MongoDB queries. </li>
+       <li> To uncover trends, correlations, and patterns in renewable energy
+        production, investments, and other related metrics. </li> <br />
+      </p>
 
-
-    <!-- <h2>Dataset</h2>
+      <h2>Dataset</h2>
+      <p>
+        The dataset used for this analysis is a comprehensive collection of renewable energy data, including information on production, investments, capacity, and various other attributes.
+      </p>
     <p>The data for this project is sourced from Kaggle <a
         href="https://www.kaggle.com/datasets/anishvijay/global-renewable-energy-and-indicators-dataset">(Ref. dataset)</a>.</p>
         <p>The dataset contains the following columns:</p>
 
-    <table>
-      <tr>
-        <th>Sr. No.</th>
-        <th>Entity</th>
-        <th>Description</th>
-      </tr>
-      <tr>
-        <td>1. </td>
-        <td>defect_id</td>
-        <td>Unique identifier for each defect.</td>
-      </tr>
-      <tr>
-        <td>2. </td>
-        <td>product_id</td>
-        <td>Identifier for the product associated with the defect.</td>
-      </tr>
-      <tr>
-        <td>3. </td>
-        <td>defect_type</td>
-        <td>Type of defect (e.g., Structural, Functional, Cosmetic).</td>
-      </tr>
-      <tr>
-        <td>4. </td>
-        <td>defect_date</td>
-        <td>Date when the defect was recorded.</td>
-      </tr>
-      <tr>
-        <td>5. </td>
-        <td>defect_location</td>
-        <td>Location of the defect (e.g., Component, Internal, Surface).</td>
-      </tr>
-      <tr>
-        <td>6. </td>
-        <td>severity</td>
-        <td>Severity level of the defect (e.g., Minor, Moderate, Critical).</td>
-      </tr>
-      <tr>
-        <td>7. </td>
-        <td>inspection_method</td>
-        <td>Method used to inspect the defect (e.g., Visual Inspection, Automated Testing, Manual Testing).</td>
-      </tr>
-      <tr>
-        <td>8. </td>
-        <td>Model</td>
-        <td>The specific model of the vehicle</td>
-      </tr>
-      <tr>
-        <td>9. </td>
-        <td>repair_cost</td>
-        <td>Cost to repair the defect.</td>
-      </tr>
-    </table>
+        <table>
+          <thead>
+              <tr>
+                  <th>Sr. No</th>
+                  <th>Attribute</th>
+                  <th>Description</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>1</td>
+                  <td>country</td>
+                  <td>Name of the country</td>
+              </tr>
+              <tr>
+                  <td>2</td>
+                  <td>year</td>
+                  <td>Year of the data record</td>
+              </tr>
+              <tr>
+                  <td>3</td>
+                  <td>energy_type</td>
+                  <td>Type of energy (e.g., solar, wind, hydro)</td>
+              </tr>
+              <tr>
+                  <td>4</td>
+                  <td>production_gwh</td>
+                  <td>Total energy production in GWh</td>
+              </tr>
+              <tr>
+                  <td>5</td>
+                  <td>installed_capacity_mw</td>
+                  <td>Installed capacity in MW</td>
+              </tr>
+              <tr>
+                  <td>6</td>
+                  <td>investments_usd</td>
+                  <td>Total investments in USD</td>
+              </tr>
+              <tr>
+                  <td>7</td>
+                  <td>population</td>
+                  <td>Population of the country</td>
+              </tr>
+              <tr>
+                  <td>8</td>
+                  <td>gdp</td>
+                  <td>Gross Domestic Product of the country</td>
+              </tr>
+              <tr>
+                  <td>9</td>
+                  <td>energy_consumption</td>
+                  <td>Energy consumption of the country</td>
+              </tr>
+              <tr>
+                  <td>10</td>
+                  <td>energy_exports</td>
+                  <td>Total energy exports</td>
+              </tr>
+              <tr>
+                  <td>11</td>
+                  <td>energy_imports</td>
+                  <td>Total energy imports</td>
+              </tr>
+              <tr>
+                  <td>12</td>
+                  <td>co2_emissions</td>
+                  <td>Total CO2 emissions</td>
+              </tr>
+              <tr>
+                  <td>13</td>
+                  <td>renewable_energy_jobs</td>
+                  <td>Total renewable energy jobs</td>
+              </tr>
+              <tr>
+                  <td>14</td>
+                  <td>government_policies</td>
+                  <td>Government policies related to renewable energy</td>
+              </tr>
+              <tr>
+                  <td>15</td>
+                  <td>r&d_expenditure</td>
+                  <td>Research and Development expenditure</td>
+              </tr>
+              <tr>
+                  <td>16</td>
+                  <td>renewable_energy_targets</td>
+                  <td>Renewable energy targets set by the country</td>
+              </tr>
+              <tr>
+                  <td>17</td>
+                  <td>average_annual_temperature</td>
+                  <td>Average annual temperature of the country</td>
+              </tr>
+              <tr>
+                  <td>18</td>
+                  <td>annual_rainfall</td>
+                  <td>Annual rainfall in the country</td>
+              </tr>
+              <tr>
+                  <td>19</td>
+                  <td>solar_irradiance</td>
+                  <td>Solar irradiance level</td>
+              </tr>
+              <tr>
+                  <td>20</td>
+                  <td>wind_speed</td>
+                  <td>Average wind speed</td>
+              </tr>
+              <tr>
+                  <td>21</td>
+                  <td>hydro_potential</td>
+                  <td>Total hydro potential</td>
+              </tr>
+              <tr>
+                  <td>22</td>
+                  <td>geothermal_potential</td>
+                  <td>Total geothermal potential</td>
+              </tr>
+              <tr>
+                  <td>23</td>
+                  <td>biomass_availability</td>
+                  <td>Total biomass availability</td>
+              </tr>
+              <tr>
+                  <td>24</td>
+                  <td>energy_storage_capacity</td>
+                  <td>Energy storage capacity</td>
+              </tr>
+              <tr>
+                  <td>25</td>
+                  <td>grid_integration_capability</td>
+                  <td>Capability to integrate with the grid</td>
+              </tr>
+              <tr>
+                  <td>26</td>
+                  <td>electricity_prices</td>
+                  <td>Electricity prices</td>
+              </tr>
+              <tr>
+                  <td>27</td>
+                  <td>energy_subsidies</td>
+                  <td>Energy subsidies provided by the government</td>
+              </tr>
+              <tr>
+                  <td>28</td>
+                  <td>international_aid_for_renewables</td>
+                  <td>International aid received for renewable energy projects</td>
+              </tr>
+              <tr>
+                  <td>29</td>
+                  <td>public_awareness</td>
+                  <td>Level of public awareness regarding renewable energy</td>
+              </tr>
+              <tr>
+                  <td>30</td>
+                  <td>energy_efficiency_programs</td>
+                  <td>Energy efficiency programs implemented</td>
+              </tr>
+              <tr>
+                  <td>31</td>
+                  <td>urbanization_rate</td>
+                  <td>Rate of urbanization in the country</td>
+              </tr>
+              <tr>
+                  <td>32</td>
+                  <td>industrialization_rate</td>
+                  <td>Rate of industrialization in the country</td>
+              </tr>
+              <tr>
+                  <td>33</td>
+                  <td>energy_market_liberalization</td>
+                  <td>Extent of energy market liberalization</td>
+              </tr>
+              <tr>
+                  <td>34</td>
+                  <td>renewable_energy_patents</td>
+                  <td>Number of renewable energy patents</td>
+              </tr>
+              <tr>
+                  <td>35</td>
+                  <td>educational_level</td>
+                  <td>Educational level of the population</td>
+              </tr>
+              <tr>
+                  <td>36</td>
+                  <td>technology_transfer_agreements</td>
+                  <td>Number of technology transfer agreements</td>
+              </tr>
+              <tr>
+                  <td>37</td>
+                  <td>renewable_energy_education_programs</td>
+                  <td>Education programs related to renewable energy</td>
+              </tr>
+              <tr>
+                  <td>38</td>
+                  <td>local_manufacturing_capacity</td>
+                  <td>Capacity for local manufacturing of renewable energy equipment</td>
+              </tr>
+              <tr>
+                  <td>39</td>
+                  <td>import_tariffs_on_energy_equipment</td>
+                  <td>Tariffs on imported energy equipment</td>
+              </tr>
+              <tr>
+                  <td>40</td>
+                  <td>export_incentives_for_energy_equipment</td>
+                  <td>Incentives for exporting energy equipment</td>
+              </tr>
+              <tr>
+                  <td>41</td>
+                  <td>natural_disasters</td>
+                  <td>Impact of natural disasters on energy production</td>
+              </tr>
+              <tr>
+                  <td>42</td>
+                  <td>political_stability</td>
+                  <td>Level of political stability</td>
+              </tr>
+              <tr>
+                  <td>43</td>
+                  <td>corruption_perception_index</td>
+                  <td>Corruption perception index</td>
+              </tr>
+              <tr>
+                  <td>44</td>
+                  <td>regulatory_quality</td>
+                  <td>Quality of regulatory environment</td>
+              </tr>
+              <tr>
+                  <td>45</td>
+                  <td>rule_of_law</td>
+                  <td>Adherence to rule of law</td>
+              </tr>
+              <tr>
+                  <td>46</td>
+                  <td>control_of_corruption</td>
+                  <td>Control of corruption</td>
+              </tr>
+              <tr>
+                  <td>47</td>
+                  <td>economic_freedom_index</td>
+                  <td>Economic freedom index</td>
+              </tr>
+              <tr>
+                  <td>48</td>
+                  <td>ease_of_doing_business</td>
+                  <td>Ease of doing business index</td>
+              </tr>
+              <tr>
+                  <td>49</td>
+                  <td>innovation_index</td>
+                  <td>Innovation index</td>
+              </tr>
+              <tr>
+                  <td>50</td>
+                  <td>number_of_research_institutions</td>
+                  <td>Number of research institutions</td>
+              </tr>
+              <tr>
+                  <td>51</td>
+                  <td>number_of_renewable_energy_conferences</td>
+                  <td>Number of renewable energy conferences</td>
+              </tr>
+              <tr>
+                  <td>52</td>
+                  <td>number_of_renewable_energy_publications</td>
+                  <td>Number of renewable energy publications</td>
+              </tr>
+              <tr>
+                  <td>53</td>
+                  <td>energy_sector_workforce</td>
+                  <td>Total workforce in the energy sector</td>
+              </tr>
+              <tr>
+                  <td>54</td>
+                  <td>proportion_of_energy_from_renewables</td>
+                  <td>Proportion of energy from renewable sources</td>
+              </tr>
+              <tr>
+                  <td>55</td>
+                  <td>public_private_partnerships_in_energy</td>
+                  <td>Public-private partnerships in energy sector</td>
+              </tr>
+              <tr>
+                  <td>56</td>
+                  <td>regional_renewable_energy_cooperation</td>
+                  <td>Regional cooperation on renewable energy projects</td>
+              </tr>
+          </tbody>
+      </table>
     <br>
-    <h2>Initial Analysis</h2>
-    <p>
-Based on the dataset, we can perform the following analyses:
-
-Defect Distribution by Type: Analyze the distribution of different types of defects.
-Defect Severity Analysis: Analyze the severity levels of the defects.
-Defect Location Analysis: Analyze where defects are commonly found.
-Inspection Method Effectiveness: Compare the effectiveness of different inspection methods.
-Repair Cost Analysis: Analyze the repair costs associated with different defects.
-Trend Analysis: Analyze the trends over time for defect occurrences.
-    </p>
+    
     
     <h2>
-      Expected Outcomes
+      Conclusion
     </h2>
-    <ul>
-      <li>Enhanced Understanding of Defects: Visualizing defect distribution by type and location helps in understanding the most common and problematic defects, allowing targeted improvements in quality control processes.</li> <br>
-      <li>Prioritization of Critical Issues: Severity analysis enables prioritizing efforts on the most critical defects that have a significant impact on product performance and customer satisfaction.</li> <br>
-      <li>Optimization of Inspection Methods: Assessing the effectiveness of different inspection methods provides insights into which methods are most efficient and cost-effective, leading to better resource allocation.</li><br>
-      <li>Cost Management: Analysis of repair costs helps in budgeting and managing expenses related to defect repairs, identifying areas where cost-saving measures can be implemented.</li> <br>
-      <li>Trend Insights:Understanding trends in defect occurrences and repair costs over time allows for proactive measures to be taken, preventing future defects and managing costs more effectively.</li>
-    </ul>
+   <p>
+    Summarize the insights gained from the analysis. Discuss how these insights can be used for decision-making in renewable energy projects.
+   </p>
     <br>
 
     <h2>Snapshots</h2>
-    <img src="../assets/Project4_Images/tableau-manufacturing_defects_dashboard_01.png" alt="" class="img-max-width"> <br> <br>
- -->
+    <img src="../assets/Project5_Images/project_05_01.png" alt="" class="img-max-width"> <br> <br>
+    <img src="../assets/Project5_Images/project_05_02.png" alt="" class="img-max-width"> <br> <br>
+    <img src="../assets/Project5_Images/project_05_03.png" alt="" class="img-max-width"> <br> <br>
+    <img src="../assets/Project5_Images/project_05_04.png" alt="" class="img-max-width">
 
-  </section>
+    </section>
 
-  <script src="../script/script.js"></script>
-</body>
-
+    <script src="../script/script.js"></script>
+  </body>
 </html>
