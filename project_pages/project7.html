@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 7 Details</title>
+    <link rel="stylesheet" href="../styles/styles_home_page.css" />
+    <!-- Include your main styles.css -->
+    <link rel="stylesheet" href="../styles/styles_project_page.css" />
+    <!-- Include project-specific CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="project-header">
+      <nav>
+        <ul>
+          <li>
+            <a href="../index.html" class="btn"
+              ><i class="fas fa-home"></i>Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/ShivamH75/Data_Analysis_Projects/blob/master/S2%20-%20Web%20Scraping/crypto_web_scraping.ipynb"
+              class="btn"
+              target="_blank"
+              ><i class="fab fa-github"></i>GitHub Repo</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <h1>Python Web Scraping - Cryptocurrency Prices</h1>
+    </header>
+
+    <!-- // Add Project Details Here  -->
+    <section class="projectDetails">
+      <h2>Project Background</h2>
+      <p>
+        This project demonstrates a comprehensive approach to data analysis
+        using SQL queries, entirely conducted within Jupyter Notebooks. A unique
+        aspect of this project is the absence of traditional DBMS software such
+        as MySQL Workbench or PostgreSQL. Instead, utilized the SQLite module in
+        Python to create and manage the database, tables, and schema directly
+        within the notebook environment.
+      </p>
+      <p>
+        The project showcases the seamless integration of Python and SQL, where
+        Python’s powerful Pandas library is leveraged for handling dataframes
+        and importing CSV files into database tables. This approach not only
+        simplifies the workflow but also enhances flexibility, making it easier
+        to analyze and manipulate data all in one place.
+      </p>
+      <br>
+
+      <h2>Objectives:</h2>
+      <p>
+        <li>
+          Conduct a thorough analysis of pizza shop sales data by formulating
+          and answering key business questions using SQL queries. This will
+          provide insights into sales trends, customer behavior, and product
+          performance.
+        </li>
+        <li>
+          Revisit and reinforce fundamental SQL concepts by applying them in
+          real-world scenarios, ensuring a strong foundation in query writing
+          and data manipulation.
+        </li>
+        <li>
+          Explore and implement advanced SQL concepts, including nested queries
+          and window functions, to perform complex data analysis and gain deeper
+          insights from the dataset.
+        </li>
+
+        <br />
+      </p>
+
+      <h2><strong>Scope of the Project:</strong></h2>
+      <p>
+        This project involves a comprehensive exploration of data analysis
+        techniques using SQL within a Python environment. The key steps and
+        components of the project include:
+      </p>
+      <ol>
+        <li>
+          <strong>Library Importation:</strong>
+          <ul>
+            <li>
+              Import essential Python libraries such as sqlite3 for database
+              management, pandas for data manipulation, and ipython-sql to
+              facilitate SQL execution directly within Jupyter Notebooks.
+            </li>
+            <li>
+              Ensure the environment is set up to allow seamless integration of
+              SQL and Python code, enabling efficient data handling and
+              analysis.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>Database Creation:</strong>
+          <ul>
+            <li>
+              Establish a new SQLite database file within the Jupyter Notebook
+              environment. The database is created programmatically using
+              Python’s SQLite module, eliminating the need for external DBMS
+              software like MySQL Workbench or PostgreSQL.
+            </li>
+            <li>
+              Define the database structure to ensure it aligns with the
+              project’s data analysis requirements.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>Table Creation:</strong>
+          <ul>
+            <li>
+              Design and create multiple tables within the SQLite database
+              according to the project's data schema. Each table is carefully
+              structured to store relevant data points, ensuring data integrity
+              and accessibility.
+            </li>
+            <li>
+              Include tables for various entities (e.g., orders, customers,
+              products) with primary keys, foreign keys, and appropriate data
+              types.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>Data Importation:</strong>
+          <ul>
+            <li>
+              Load data into the SQLite tables from external CSV files using
+              Python’s Pandas library. This involves reading the CSV files into
+              Pandas DataFrames and then transferring the data into the database
+              tables.
+            </li>
+            <li>
+              Ensure that the imported data adheres to the predefined schema and
+              that there is no overwriting of existing table structures.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>SQL Query Execution:</strong>
+          <ul>
+            <li>
+              Execute a series of SQL queries within the Jupyter Notebook to
+              analyze the data stored in the SQLite database. This includes both
+              basic queries to retrieve specific data and advanced queries
+              involving nested queries and window functions.
+            </li>
+            <li>
+              Address specific business questions related to pizza shop sales,
+              using SQL to extract meaningful insights and trends from the data.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>Data Analysis:</strong>
+          <ul>
+            <li>
+              Perform a detailed analysis of the query results to draw
+              actionable insights.
+            </li>
+            <li>
+              Document findings and present them in a clear and concise manner,
+              supported by data visualizations and summaries where appropriate
+              (To be added).
+            </li>
+          </ul>
+        </li>
+      </ol>
+
+      <br />
+
+      <h2>Dataset</h2>
+      <p>
+        The dataset comprises multiple tables that represent various aspects of
+        a pizza shop's sales and operations. These tables are interrelated,
+        allowing for comprehensive data analysis on orders, pizza types, and
+        detailed order items.
+      </p>
+
+      <h3>Entity-Relationship Diagram (ERD)</h3>
+      <img
+        src="../assets/Project6_Images/project_07_01.png"
+        alt=""
+        class="img-max-width"
+      />
+
+      <br />
+      <br />
+
+     
+
+      <h2>Snapshots</h2>
+      <p>Setup with database:</p>
+      <img
+        src="../assets/Project6_Images/project_06_02.png"
+        alt=""
+        class="img-max-width"
+      />
+      <p>Sample question SQL queries and results:</p>
+      <img
+        src="../assets/Project6_Images/project_06_03.png"
+        alt=""
+        class="img-max-width"
+      />
+      <img
+        src="../assets/Project6_Images/project_06_04.png"
+        alt=""
+        class="img-max-width"
+      />
+
+      <img
+        src="../assets/Project6_Images/project_06_05.png"
+        alt=""
+        class="img-max-width"
+      />
+      <img
+        src="../assets/Project6_Images/project_06_06.png"
+        alt=""
+        class="img-max-width"
+      />
+      <img
+        src="../assets/Project6_Images/project_06_07.png"
+        alt=""
+        class="img-max-width"
+      />
+      <br />
+
+<br>
+      <h2>Conclusion</h2>
+      <p>
+        This project successfully demonstrated the integration of SQL and Python
+        for comprehensive data analysis within a Jupyter Notebook environment.
+        By leveraging SQLite, we were able to create and manage a complete
+        database system without relying on external DBMS software, which
+        highlighted the flexibility and power of in-notebook data manipulation.
+      </p>
+      <br />
+
+
+      <h3>Reference:</h3>
+
+      <p>
+        WsCube Tech -
+        <a href="https://www.youtube.com/watch?v=zZpMvAedh_E&t=3899s">Link</a>
+      </p>
+      <p>
+        Referred for dataset of Pizza shop sales and sample questions for
+        analysis.
+      </p>
+    </section>
+
+    <script src="../script/script.js"></script>
+  </body>
+</html>
