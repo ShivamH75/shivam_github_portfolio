@@ -1,124 +1,169 @@
 /* Project 1 specific styles */
 
 .project-header {
-    background-color: #333;
-    color: white;
-    padding: 15px 20px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 15px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .project-header h1 {
-    margin: 0;
-    font-size: 2em;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+  margin: 0;
+  font-size: 2em;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .project-header nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .project-header nav ul li {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .project-header nav ul li a {
-    display: flex;
-    align-items: center;
-    white-space: nowrap;
-    color: white;
-    text-decoration: none;
-    font-size: 0.9em;
-    padding: 5px 10px;
-    border-radius: 5px;
-    background-color: #333;
-    transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  color: white;
+  text-decoration: none;
+  font-size: 0.9em;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #333;
+  transition: background-color 0.3s;
 }
 
 .project-header nav ul li a i {
-
-    margin-right: 8px; /* Add margin between icon and text */
-
+  margin-right: 8px; /* Add margin between icon and text */
 }
 
 /* Primary Button */
 .project-header nav ul li a.primary-btn {
-    background-color: #004d40;
-    color: white;
+  background-color: #004d40;
+  color: white;
 }
 
 .project-header nav ul li a.primary-btn:hover {
-    background-color: #003327;
+  background-color: #003327;
 }
 
 /* Secondary Button */
 .project-header nav ul li a.secondary-btn {
-    background-color: #eeeeee;
-    color: #00796b;
+  background-color: #eeeeee;
+  color: #00796b;
 }
 
 .project-header nav ul li a.secondary-btn:hover {
-    background-color: #cccccc;
+  background-color: #cccccc;
 }
 
 section {
-    padding-top: 80px; /* Ensure section content is not hidden behind the header */
-    padding-left: 20px;
-    padding-right: 20px;
-    text-align: center; /* Center-align section text */
+  padding-top: 80px; /* Ensure section content is not hidden behind the header */
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center; /* Center-align section text */
 }
 
 section p {
-    text-align: justify; /* Justify alignment for description text */
-    /* max-width: 800px; */
-    margin: 0 auto; /* Center the paragraph */
+  text-align: justify; /* Justify alignment for description text */
+  /* max-width: 800px; */
+  margin: 0 auto; /* Center the paragraph */
 }
 
 .projectDetails {
-    /* margin-top: 70px; Add some space between sections */
-    text-align: left;
-    margin: 80px 20px 100px 20px;
-    padding: 20px;
-    /* background-color: #f9f9f9; */
-    border-radius: 10px;
-    width: 95%;
-    /* box-shadow: 0 2px 5px rgba(0, 0, 0.1, 0.1); */
-    border: 2px solid #ccc;
-    border-radius: 8px;
+  /* margin-top: 70px; Add some space between sections */
+  text-align: left;
+  margin: 80px 20px 100px 20px;
+  padding: 20px;
+  /* background-color: #f9f9f9; */
+  border-radius: 10px;
+  width: 95%;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0.1, 0.1); */
+  border: 2px solid #ccc;
+  border-radius: 8px;
 }
 
 .projectDetails h2 {
-    margin: 5px;
-    font-size: 1.5em;
-    margin-bottom: 10px;
+  margin: 5px;
+  font-size: 1.5em;
+  margin-bottom: 10px;
 }
 
 .projectDetails p {
-    margin: 5px;
-    font-size: 1em;
-    margin-bottom: 10px;
-    color: #333;
+  margin: 5px;
+  font-size: 1em;
+  margin-bottom: 10px;
+  color: #333;
 }
 
-
 table {
-    border-collapse: collapse;
-    width: 60%;
+  border-collapse: collapse;
+  width: 60%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  /* border-radius: 10px; */
+}
+
+/* MEDIA QUERY  */
+/* Media query for responsive design on small screens */
+@media (max-width: 600px) {
+  section {
+    max-width: 90%;
   }
-  
-  td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-    /* border-radius: 10px; */
+
+  .projectDetails {
+    margin-top: 100px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 88%;
+    padding: 10px;
   }
+
+  .projectDetails h2 {
+    font-size: 1em; /* Reduce heading font size */
+  }
+
+  .projectDetails p {
+    font-size: 0.8em; /* Reduce paragraph font size */
+  }
+
+  table {
+    width: 100%; /* Full width for tables */
+    font-size: 0.8em;
+  }
+
+  /* Responsive image class */
+.img-max-width {
+    /* max-width: 1080px; */
+    width: 100%;
+    height: auto;
+    border: 1px solid #333333;
+    border-radius: 8px;
+}
+
+.img-width-half {
+    /* max-width: 500px; */
+    width: 100%;
+    height: auto;
+     border: 1px solid #333333;
+    border-radius: 8px;
+}
+}
