@@ -15,7 +15,7 @@
 
 .project-header h1 {
   margin: 0;
-  font-size: 2em;
+  font-size: 1.5em;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -166,4 +166,13 @@ th {
      border: 1px solid #333333;
     border-radius: 8px;
 }
+
+.project-header h1 {
+  margin: 0;
+  font-size: 1.2em;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 }

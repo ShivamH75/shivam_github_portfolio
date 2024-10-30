@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="../styles/styles_project_page.css" />
   <!-- Include project-specific CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-  <link rel="icon" type="image/png" href="../assets/sh_favicon.ico">
+  <link rel="icon" type="image/png" href="../assets/sh_favicon.ico" />
 </head>
 
 <body>
@@ -26,77 +26,333 @@
         </li>
       </ul>
     </nav>
-    <h1>Python Data Analysis</h1>
+    <h1>Python Exploratory Data Analysis: ISRO Satellite Launches 🚀🛰️</h1>
   </header>
 
-  
   <!-- // Add Project Details Here  -->
   <section class="projectDetails">
-    <h2>Project Background</h2>
-    <p>
-      This project involves using Python perform exploratory data analysis.
-    </p>
-    <br />
+    <h2>Project Overview</h2>
 
+    <p>
+      This project performs an <b>Exploratory Data Analysis (EDA)</b> on a
+      dataset containing information about ISRO satellite launches. The goal
+      of this project is to uncover insights into ISRO's satellite launch
+      history, analyse the frequency of launches over time, the types of orbit
+      placements, satellite applications, and the success rate of launches.
+      This analysis helps in understanding trends in ISRO's satellite
+      missions, launch vehicle distribution, and application types.
+    </p>
+    <br>
     <h2>Objectives</h2>
-    <p>
-      <li>
-        Data Collection: 
-      </li>
-      <li>
-        Data Structuring:
-      </li>
-      <li>
-        Data Accuracy:
-      </li>
-      <li>
-        Automation:
-      </li>
-      <li>
-        Scalability: 
-      </li>
 
-      <br />
+    <p>The primary objectives of this project are:</p>
+    <ul>
+      <li>
+        To understand the success and failure rates of satellite launches.
+      </li>
+      <li>To analyse the frequency of satellite launches over time.</li>
+      <li>To identify the distribution of orbit types in ISRO missions.</li>
+      <li>
+        To assess the different application purposes of launched satellites.
+      </li>
+      <li>To explore the diversity in the launch vehicles used.</li>
+    </ul>
+
+    <br>
+    <h2>Data Source</h2>
+    <p>
+      The dataset used in this project is a CSV file <a
+        href="https://www.kaggle.com/datasets/anoopjohny/isro-dataset">ISRO Mission Launches</a>, containing fields such as:
     </p>
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            <p><strong>Attribute</strong></p>
+          </td>
+          <td>
+            <p><strong>Description</strong></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>SL No</p>
+          </td>
+          <td>
+            <p>Unique serial number of the launch.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Satellite Name</p>
+          </td>
+          <td>
+            <p>Name of the satellite.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Launch Date</p>
+          </td>
+          <td>
+            <p>Date of the launch.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Launch Vehicle</p>
+          </td>
+          <td>
+            <p>Vehicle used for the launch.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Orbit Type</p>
+          </td>
+          <td>
+            <p>The orbit type of the satellite.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Application</p>
+          </td>
+          <td>
+            <p>Purpose or application of the satellite.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Remarks</p>
+          </td>
+          <td>
+            <p>Launch success status or additional comments.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
 
-    <h2><strong>Scope</strong></h2>
-    <p>
+    <br>
+    <h2>Environment and Setup</h2>
+    <p><strong>Prerequisites:</strong></p>
+    <ul>
+      <li>Python 3.7 or above</li>
+      <li>
+        Jupyter Notebook (or any other compatible IDE such as Google Collab)
+      </li>
+    </ul>
+    <p><strong>Required libraries:</strong></p>
+    <ul>
+      <li>Pandas</li>
+      <li>Matplotlib</li>
+      <li>Seaborn</li>
+      <li>Numpy</li>
+    </ul>
+    <p><strong>Setup Instructions:</strong></p>
     <ol>
+      <li>Clone the project repository or download the dataset.</li>
+      <li>Open a Jupyter Notebook.</li>
+      <li>
+        Install the required libraries if they are not already installed:<br />
+        <pre><code>
+            <i>bash</i>
+            pip install pandas matplotlib seaborn numpy
+            </code></pre>
 
-      <li>Import data</li>
-      <li>data validation</li>
-      <li>
-        plotting
+
       </li>
       <li>
-       conclusion
+        Load the CSV file in the Jupyter Notebook and start the analysis.
       </li>
-      </p>
     </ol>
 
+    <br>
+    <h2>Data Preprocessing Steps </h2>
+    <ol>
+      <li>
+        <b>Data Loading:</b> The CSV file is read into a pandas DataFrame.
+      <li><b>Data Inspection:</b> Basic information about the dataset structure, data
+        types, and initial values are reviewed using head(), info(), and
+        isnull() to check for missing values.</li>
+      <li><b>Column Renaming:</b> Column names are standardized for easier handling,
+        with SL_No, Satellite_Name, Launch_Date, Launch_Vehicle, Orbit_Type,
+        Application, and Remarks as the final column names.</li>
+      <li><b>Date Conversion:</b> Launch_Date is converted to a datetime format for
+        easier extraction of year-based insights.</li>
+      <li><b>Missing Data Handling:</b> Any missing values in relevant columns are
+        identified and handled.</li>
+    </ol>
 
-    <br />
-
-    <h2>Data Reference</h2>
-    <p>The data source for this project is the
-      <a href="https://finance.yahoo.com/markets/crypto/all/">ISRO Mission Launches</a> page.
+    <br>
+    <h2>Exploratory Data Analysis</h2>
+    <p>
+      Steps of EDA with visualizations and analysis:
     </p>
+    <b>
+      6.1 Launch Success Analysis
+    </b>
+    <ul>
+      <li>
+        <strong>Objective:</strong> To compare the number of successful vs.
+        unsuccessful launches.
+      </li>
+      <li>
+        <strong>Visualization:</strong> A bar plot shows the count of each
+        outcome (success or failure).
+      </li>
+      <li>
+        <strong>Insights:</strong> Observes the overall success rate and
+        trends in successful launches.
+      </li>
+    </ul>
+    <b>6.2 Yearly Launches</b>
+    <ul>
+      <li>
+        <strong>Objective:</strong> To analyse how the frequency of satellite
+        launches has changed over time.
+      </li>
+      <li>
+        <strong>Visualization:</strong> A bar plot of the number of launches
+        per year.
+      </li>
+      <li>
+        <strong>Insights:</strong> Identifies any trends in launch frequency
+        over the years.
+      </li>
+    </ul>
+    <b>6.3 Orbit Type Distribution</b>
+    <ul>
+      <li>
+        <strong>Objective:</strong> To evaluate the diversity of orbit
+        placements for launched satellites.
+      </li>
+      <li>
+        <strong>Visualization:</strong> A horizontal bar plot of orbit types.
+      </li>
+      <li>
+        <strong>Insights:</strong> Shows the most common orbit types used by
+        ISRO for satellite placement.
+      </li>
+    </ul>
+    <b>6.4 Satellite Applications</b>
+    <ul>
+      <li>
+        <strong>Objective:</strong> To understand the primary applications for
+        ISRO&rsquo;s satellite missions.
+      </li>
+      <li>
+        <strong>Visualization:</strong> A bar plot showing the types of
+        applications for each satellite.
+      </li>
+      <li>
+        <strong>Insights:</strong> Highlights popular applications such as
+        Earth Observation and Experimental.
+      </li>
+    </ul>
+    <b>6.5 Launch Vehicle Distribution</b>
+    <ul>
+      <li>
+        <strong>Objective:</strong> To analyse the range of launch vehicles
+        used.
+      </li>
+      <li>
+        <strong>Visualization:</strong> A pie chart showing the distribution
+        of each launch vehicle type.
+      </li>
+      <li>
+        <strong>Insights:</strong> Shows the diversity and reliance on
+        different launch vehicles over time.
+      </li>
+    </ul>
 
-    <br />
+    <br>
+    <h2>Conclusion</h2>
+
+    <p>The EDA on ISRO satellite launches provided the following insights:</p>
+    <ol>
+      <li>
+        <strong>Launch Success Rate:</strong> ISRO&rsquo;s satellite launches
+        show a high success rate, with most missions reaching their intended
+        orbit successfully.
+      </li>
+      <li>
+        <strong>Frequency of Launches:</strong> There has been a steady
+        increase in ISRO&rsquo;s launch frequency over recent years, showing
+        the organization's growing capabilities.
+      </li>
+      <li>
+        <strong>Orbit Types:</strong> Low Earth Orbit (LEO) is the most used
+        orbit type, consistent with ISRO&rsquo;s mission objectives.
+      </li>
+      <li>
+        <strong>Applications of Satellites:</strong> Earth Observation and
+        Experimental satellites dominate ISRO&rsquo;s applications, aligning
+        with its goals for environmental monitoring, weather prediction, and
+        technological development.
+      </li>
+      <li>
+        <strong>Launch Vehicles:</strong> A variety of launch vehicles have
+        been utilized, showcasing ISRO&rsquo;s adaptability and innovation in
+        launch technology.
+      </li>
+    </ol>
+
+    <br>
+    <h2>Future Improvements</h2>
+    </ol>
+    <p>The project can be expanded in several ways:</p>
+    <ul>
+      <li>
+        <b>Detailed Time-Series Analysis:</b> Performing a deeper time-series
+        analysis to identify seasonal or annual trends in launches.
+      </li>
+      <li>
+        <b>Additional Metrics:</b> Including more metrics, such as payload weight or
+        mission costs, could add depth to the analysis.
+      </li>
+      <li>
+        <b>Interactive Visualizations:</b> Using libraries like
+        <i>Plotly</i> for more interactive and engaging
+        visualizations.
+      </li>
+      <li>
+        <b>Comparative Analysis:</b> Comparing ISRO's launch data with other
+        space organizations for a broader perspective.
+      </li>
+    </ul>
+
+
+<br />
 
     <h2>Snapshots</h2>
-    <p>Setup with database:</p>
-    <img src="../assets/Project7_Images/project_08_01.png" alt="project 8, image 1" class="img-max-width" />
+    <img src="../assets/Project8_Images/project_08_01.png" alt="project 8, image 1" class="img-max-width" /> <br> <br>
+    <img src="../assets/Project8_Images/project_08_02.png" alt="project 8, image 2" class="img-max-width" /> <br> <br>
+    <img src="../assets/Project8_Images/project_08_03.png" alt="project 8, image 3" class="img-max-width" /> <br> <br>
+    <img src="../assets/Project8_Images/project_08_04.png" alt="project 8, image 4" class="img-max-width" /> <br> <br>
+    <img src="../assets/Project8_Images/project_08_05.png" alt="project 8, image 5" class="img-max-width" /> <br> <br>
+    <img src="../assets/Project8_Images/project_08_06.png" alt="project 8, image 6" class="img-max-width" /> <br> <br>
+    <img src="../assets/Project8_Images/project_08_07.png" alt="project 8, image 7" class="img-max-width" />
 
-    <br />
-    <h2>Conclusion</h2>
-    <p>
-      The project successfully demonstrated the capability of Python to
-     perform data anaysis.
-    </p>
-    <br />
+
   </section>
   <script src="../script/script.js"></script>
+  <style>
+    /* Styling for code snippet */
+    pre {
+      width: 50%;
+      background-color: #f4f4f4;
+      padding: 5px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+
+    code {
+      font-family: monospace;
+      color: #333;
+    }
+  </style>
 </body>
 
 </html>
