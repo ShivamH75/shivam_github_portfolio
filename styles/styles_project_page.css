@@ -145,6 +145,14 @@ th {
     font-size: 0.8em; /* Reduce paragraph font size */
   }
 
+  .projectDetails ol {
+    font-size: 0.8em; /* Reduce ordered list font size */
+  }
+
+  .projectDetails ul {
+    font-size: 0.8em; /* Reduce unordered list font size */
+  }
+
   table {
     width: 100%; /* Full width for tables */
     font-size: 0.8em;
@@ -175,4 +183,19 @@ th {
   transform: translateX(-50%);
 }
 
+}
+
+/* // css style for code snippets  */
+.code-container {
+  background-color: #2e3440;
+  color: #d8dee9;
+  font-family: monospace;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+.copy-button {
+  margin-left: 10px;
+  padding: 2px;
+  cursor: pointer;
 }

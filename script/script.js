@@ -55,3 +55,14 @@ fetch('config/contact_details.json')
 //                 document.getElementById('github-link').href = project.link;
 //             })
 //             .catch(error => console.error('Error fetching project details:', error));
+
+
+// copy to clipboard function used in code snippet
+function copyToClipboard() {
+    const codeText = "pip install pandas matplotlib seaborn numpy";
+    navigator.clipboard.writeText(codeText).then(() => {
+        alert("Copied to clipboard!");
+    }).catch(err => {
+        console.error("Failed to copy: ", err);
+    });
+}
