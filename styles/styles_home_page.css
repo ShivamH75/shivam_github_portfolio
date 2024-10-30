@@ -190,6 +190,7 @@ footer {
 }
 
 /* Media query for nav bar  */
+/* add similar query for project pages */
 @media (max-width: 600px) {
     nav ul {
         flex-direction: row;
