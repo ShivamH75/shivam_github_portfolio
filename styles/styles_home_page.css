@@ -29,6 +29,7 @@ header {
 
 header nav {
     margin-right: 20px;
+    font-family: 'Open Sans';
 }
 
 nav ul {
@@ -63,6 +64,11 @@ section {
     padding: 125px 20px 80px 20px;
     /* Adjust top padding to account for header height */
     text-align: center;
+}
+
+section h1{
+   font-family: Georgia;
+   font-size: 1.8em !important;
 }
 
 .about-section {
