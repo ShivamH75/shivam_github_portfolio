@@ -343,7 +343,7 @@ footer {
 }
 
 /* Stack image and text on small screens */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .container {
         flex-direction: column;
         /* text-align: center; */
@@ -357,6 +357,10 @@ footer {
     }
 
     .text h1 {
-        text-align: center;
+        text-align: left;
+    }
+
+    .text p {
+        text-align: justify;
     }
 }
