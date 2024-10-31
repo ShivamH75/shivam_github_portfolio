@@ -66,14 +66,15 @@ section {
     text-align: center;
 }
 
-section h1{
-   font-family: Georgia;
-   font-size: 1.8em !important;
+section h1 {
+    font-family: Georgia;
+    font-size: 1.8em !important;
 }
 
 .about-section {
     /* line-height: 1.6; */
-    padding: 100px 20px 20px 20px;
+    margin-top: 100px;
+    padding: 10px 20px 20px 20px;
     text-align: center;
 }
 
@@ -108,6 +109,12 @@ section h1{
 /* justify the content in the paragraph of project cards  */
 .project-card p {
     text-align: justify;
+    /* font-family: Roboto; */
+}
+
+.project-card h2 {
+    text-align: center;
+    /* font-family: Open Sans; */
 }
 
 .project-card:hover {
@@ -239,9 +246,13 @@ footer {
         /* updated top height */
         text-align: center;
     }
-    
+
+    section h1,
+    h2 {
+        margin: 0px;
+    }
+
     .about-section {
-        /* line-height: 1.6; */
         /* added top margin */
         margin-top: 150px;
         padding: 20px 20px 20px 20px;
@@ -284,14 +295,67 @@ footer {
     max-width: 1080px;
     width: 75%;
     height: auto;
-    border: 1px solid #333333; /* Adjust the thickness, style, and color as needed */
-    border-radius: 4px; /* Optional: Add rounded corners */
+    border: 1px solid #333333;
+    /* Adjust the thickness, style, and color as needed */
+    border-radius: 4px;
+    /* Optional: Add rounded corners */
 }
 
 .img-width-half {
     max-width: 500px;
     width: 100%;
     height: auto;
-     border: 1px solid #333333; /* Adjust the thickness, style, and color as needed */
-    border-radius: 4px; /* Optional: Add rounded corners */
+    border: 1px solid #333333;
+    /* Adjust the thickness, style, and color as needed */
+    border-radius: 4px;
+    /* Optional: Add rounded corners */
+}
+
+/* -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_  */
+/* // new design css for about section  */
+
+/* Container for the image and text */
+.container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* Space between image and text */
+    flex-wrap: wrap;
+    /* Allows items to wrap on smaller screens */
+}
+
+/* Image styling */
+.container img {
+    width: 45%;
+    /* Adjust width as needed */
+    height: auto;
+    border-radius: 25px;
+}
+
+/* Text styling */
+.text {
+    /* Allows the text to take up remaining space */
+    flex: 1;
+    font-size: 16px;
+    text-align: justify;
+    font-family: cursive;
+}
+
+/* Stack image and text on small screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        /* Optional: center-align text on mobile */
+    }
+
+    .container img {
+        width: 100%;
+        /* Make image responsive */
+        /* max-width: 400px; */
+    }
+
+    .text h1 {
+        text-align: center;
+    }
 }
