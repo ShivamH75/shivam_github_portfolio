@@ -346,7 +346,7 @@ footer {
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
-        text-align: center;
+        /* text-align: center; */
         /* Optional: center-align text on mobile */
     }
 
