@@ -158,6 +158,9 @@ th {
   .projectDetails ul {
     font-size: 0.8em; /* Reduce unordered list font size */
   }
+  .projectDetails li {
+    font-size: 0.8em; /* Reduce list items font size */
+  }
 
   table {
     width: 100%; /* Full width for tables */
