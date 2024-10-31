@@ -11,6 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  line-height: 1;
 }
 
 .project-header h1 {
@@ -129,7 +130,7 @@ th {
   }
 
   .projectDetails {
-    margin-top: 100px;
+    margin-top: 120px;
     margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
@@ -174,15 +175,6 @@ th {
      border: 1px solid #333333;
     border-radius: 8px;
 }
-
-.project-header h1 {
-  margin: 0;
-  font-size: 1.2em;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 }
 
 /* // css style for code snippets  */
@@ -198,4 +190,24 @@ th {
   margin-left: 10px;
   padding: 2px;
   cursor: pointer;
+}
+
+/* media query only for project   header  */
+@media (max-width: 600px) {
+
+  .project-header {
+    position: absolute;
+    width: 90%;
+  }
+  .project-header h1 {
+    position: relative;
+    text-align: center;
+    font-size: 1.2em;
+    width: 100%;
+    order: -1;
+  }
+
+  .project-header nav  {
+    font-size: 0.75em;
+  }
 }
