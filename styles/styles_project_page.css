@@ -77,6 +77,11 @@ section {
   text-align: center; /* Center-align section text */
 }
 
+/* color for all fonts (except h1) in section  */
+section p, h2, h3, li{
+  color: #212427;
+}
+
 section p {
   text-align: justify; /* Justify alignment for description text */
   /* max-width: 800px; */
